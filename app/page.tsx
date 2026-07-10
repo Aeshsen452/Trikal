@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react"
 
 export default function LandingPage() {
   return (
-    <div className="text-[#918a8aee] flex flex-col justify-center items-center gap-5 w-full  p-8 relative py-16 ">
+    <div className="text-[#918a8aee] flex flex-col justify-center items-center gap-5 w-full  p-8 relative  ">
       <h3 className="text-[#c05415] font-bold">
         Consistency Beats Talent.
 
