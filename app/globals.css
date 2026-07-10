@@ -1,2 +1,29 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: hollowletter;
+    src: url("../public/assests/fonts/Neoneon-3zaD6.otf");
+}
+
+
+:root {
+    --bgcolor: #0b0804;
+    --primarycolor: #1a1612;
+    --bordecolor: #24140b;
+    --textprimarycolor: #7e3a12;
+    --textcolor: #918a8aee;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--bgcolor);
+}
+
+
+.hollowingText {
+    font-family: hollowletter;
+}
