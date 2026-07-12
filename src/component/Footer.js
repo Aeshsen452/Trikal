@@ -1,12 +1,16 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import { House, LibraryBig, BookDown } from "lucide-react";
 import { RiTelegramFill } from "@remixicon/react";
+import { useState } from "react";
 
 
-const FooterContainer = ({ item, handleCLick }) => {
+const FooterContainer = ({ item, handleCLick, active }) => {
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-2 text-[var(--textcolor)] cursor-pointer " onClick={handleCLick}>
+        <div className=
+            {`flex flex-col lg:flex-row justify-center items-center gap-2 ] cursor-pointer ${active === item.index ? "text-[#7e3a12]" : "text-[#918a8aee]"}`}
+
+            onClick={() => { handleCLick(item.index) }}>
             <div className="flex justify-center items-center"> {item.Icon} </div>
             <p className=" font-bold text-sm"> {item.label}  </p>
 
@@ -15,6 +19,8 @@ const FooterContainer = ({ item, handleCLick }) => {
 }
 
 const Footer = () => {
+    const router = useRouter();
+    const [active, setActive] = useState(1);
 
     const Items = [
         {
@@ -39,15 +45,25 @@ const Footer = () => {
         },
     ]
 
-    const handleCLick = () => {
-      alert("ipos dfsafsadfksadkfsdakfjskdfksdafkjkdskfskadfksadfksdajfk")
+    const handleCLick = (index) => {
+        const routes = {
+            1: "/",
+            2: "/mycourse",
+            3: "/mydownolds"
+        }
+        if (index < 4) {
+            router.push(routes[index])
+        } else {
+            window.open("https://t.me/trikaalias")
+        }
+        return setActive(index)
     }
 
 
     return (
         <footer className="w-full h-20 bg-[var(--primarycolor)] fixed bottom-0 flex justify-between p-3 gap-5">
             {
-                Items.map((item, index) => (<FooterContainer key={index} item={item} handleCLick={handleCLick} />))
+                Items.map((item, index) => (<FooterContainer key={index} active={active} item={item} handleCLick={handleCLick} />))
             }
         </footer>
     )

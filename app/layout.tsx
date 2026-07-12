@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "../src/component/Navbar";
 import Footer from "../src/component/Footer";
 import 'animate.css';
+import Sidebar from "../src/component/Sidebar";
 
 export const metadata: Metadata = {
   title: "Trikal IAS",
@@ -23,9 +24,12 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <main>
           <Navbar />
+         
           {children}
           <Footer />
         </main></body>
     </html>
   );
 }
+
+
