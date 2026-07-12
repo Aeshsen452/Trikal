@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: hollowletter;
-    src: url("../public/assests/fonts/Neoneon-3zaD6.otf");
+    src: url("../public/assests/fonts/NoctraDripSolidmeltSolidmelt-XGR0a.ttf");
 }
 
 
@@ -25,5 +25,5 @@ body {
 
 
 .hollowingText {
-    font-family: hollowletter;
+    font-family:sans-serif;
 }

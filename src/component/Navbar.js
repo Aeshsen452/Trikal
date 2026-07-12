@@ -1,6 +1,7 @@
+"use client"
+
 import { TextAlignJustify } from 'lucide-react';
 import Image from "next/image"
-
 
 const Navbar = () => {
     return (
@@ -18,7 +19,11 @@ const Navbar = () => {
                 </h1>
             </div>
 
-            <div className=" col-span-2 flex justify-end items-center px-5">
+            <div className=" col-span-2 flex justify-end items-center px-5 "
+                onClick={() => {
+                    alert("this is the dance of the parting ")
+                }}
+            >
                 <TextAlignJustify size={20} className="text-[var(--textprimarycolor)]" />
             </div>
 
