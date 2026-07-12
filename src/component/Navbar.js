@@ -7,7 +7,7 @@ import Sidebar from './Sidebar';
 
 const Navbar = () => {
 
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const listItems = [
         {
