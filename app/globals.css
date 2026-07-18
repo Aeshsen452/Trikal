@@ -27,3 +27,27 @@ body {
 .hollowingText {
     font-family:sans-serif;
 }
+
+#span::after{
+ content: "";
+ width: 2px;
+ margin-left: 5px;
+ height: 40px;
+ margin-top: 10px;
+ background-color: #cccc;
+ display: flex;
+ justify-items: center;
+
+ animation: fade 500ms ease-in-out alternate-reverse infinite;
+}
+
+@keyframes fade {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}

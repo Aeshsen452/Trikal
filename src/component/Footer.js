@@ -61,7 +61,7 @@ const Footer = () => {
 
 
     return (
-        <footer className="w-full h-20 bg-[var(--primarycolor)] fixed bottom-0 flex justify-between p-3 gap-5">
+        <footer className="w-full lg:hidden h-20 bg-[var(--primarycolor)] fixed bottom-0 flex justify-between p-3 gap-5">
             {
                 Items.map((item, index) => (<FooterContainer key={index} active={active} item={item} handleCLick={handleCLick} />))
             }
