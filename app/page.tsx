@@ -86,7 +86,7 @@ export default function LandingPage() {
 
       </h3>
       <h1 className="hollowingText text-white font-bold text-4xl lg:text-5xl text-center leading-[1.3] tracking-[3] lg:px-80" >Say Goodbye to Your Social Life. Say Hello to Your
-        <span id="span" ref={spanRef} className=" lg:flex lg:w-60 lg:ml-60    rounded text-amber-400 mt-5 inline-block px-7 py-2 tracking-normal font-serif ">  </span></h1>
+        <span id="span" ref={spanRef} className=" w-40 lg:flex lg:w-60 lg:ml-60    rounded text-amber-400 mt-5 inline-block px-7 py-2 tracking-normal font-serif ">  </span> </h1>
       <p className="text-center px-5">
         Every Day You Study Brings You One Step Closer to Your Dream Rank.
       </p>
