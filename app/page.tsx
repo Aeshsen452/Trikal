@@ -28,7 +28,7 @@ export default function LandingPage() {
 
 
 
-  const words = ["IAS", "Dream"];
+  const words = ["IAS", "IPS" , "MPPSC" ];
 
   const wordIndex = useRef(0);
   const charIndex = useRef(0);
@@ -75,10 +75,6 @@ export default function LandingPage() {
 
 
 
-
-
-
-
   return (
     <div className="text-[#918a8aee] flex flex-col justify-center items-center gap-5 w-full  py-10 relative ">
       <h3 className="text-[#c05415] font-bold lg:text-2xl">
@@ -86,7 +82,8 @@ export default function LandingPage() {
 
       </h3>
       <h1 className="hollowingText text-white font-bold text-4xl lg:text-5xl text-center leading-[1.3] tracking-[3] lg:px-80" >Say Goodbye to Your Social Life. Say Hello to Your
-        <span id="span" ref={spanRef} className=" w-40 lg:flex lg:w-60 lg:ml-60    rounded text-amber-400 mt-5 inline-block px-7 py-2 tracking-normal font-serif ">  </span> </h1>
+        <span id="span" ref={spanRef} className=" w-48  lg:w-60 ml-28 lg:ml-60  flex items-center   rounded text-amber-400 mt-1  px-7 py-2 tracking-normal font-serif ">
+        </span> </h1>
       <p className="text-center px-5">
         Every Day You Study Brings You One Step Closer to Your Dream Rank.
       </p>
