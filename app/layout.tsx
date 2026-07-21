@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "../src/component/Navbar";
-import Footer from "../src/component/Footer";
 import 'animate.css';
-import Sidebar from "../src/component/Sidebar";
 
 export const metadata: Metadata = {
   title: "Trikal IAS",
@@ -22,12 +19,8 @@ export default function RootLayout({
         h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <main>
-          <Navbar />
-         
-          {children}
-          <Footer />
-        </main></body>
+        {children}
+      </body>
     </html>
   );
 }
