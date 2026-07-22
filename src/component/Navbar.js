@@ -26,6 +26,9 @@ const Navbar = () => {
 
 
     ]
+
+    const baseurl = process.env.NEXT_PUBLIC_API_URL;
+    console.log(baseurl)
     return (
         <>
             <nav className="w-full  bg-[var(--primarycolor)] border border-[#24140b] sticky top-0 p-3 grid grid-cols-6">
